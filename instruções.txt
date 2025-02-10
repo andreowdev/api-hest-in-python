@@ -1,0 +1,14 @@
+Passos principais para adicionar comando no python
+
+1. trazer a váriavel que recebe o comando em sql.
+
+exemplo: 
+# comando = 'variavel que recebe o comando sql'
+comando = 'SELECT * FROM hest.produto'
+2. Executa o comando 
+
+    cursor.execute(comando) 
+    3. If se o comando for pra editar use: 
+#conexao.commit() editar o banco de dados
+    3.1 Se for para apenas ler o banco use: 
+#resultado = cursor.fetchall() #ler o banco de dados
